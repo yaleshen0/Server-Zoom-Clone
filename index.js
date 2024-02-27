@@ -7,7 +7,7 @@ const path = require("path");
 const PORT = process.env.PORT || 8080;
 
 const app = express();
-app.use("/healthcheck", (req, res){
+app.use("/healthcheck", (req, res)=>{
   res.status(200).send('Ok')
 })
 app.use(express.json());
